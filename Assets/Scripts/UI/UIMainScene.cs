@@ -73,4 +73,12 @@ public class UIMainScene : MonoBehaviour
             InfoPopup.Name.text = content.GetName();
         }
     }
+
+    #region UI Button
+    public void ReturnToStart()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    #endregion
 }
