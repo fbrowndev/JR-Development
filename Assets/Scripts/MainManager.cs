@@ -9,7 +9,7 @@ using System.IO;
 public class MainManager : MonoBehaviour
 {
     //Access from any other script
-    public static MainManager Instance;
+    public static MainManager Instance { get; private set; }
 
     //Turning into serializable date that can be saved through sessions
     public Color TeamColor;
